@@ -24,7 +24,7 @@
 COMPILER=none
 #COMPILER=llvm
 
-PREFIX=/usr/
+PREFIX=/usr/local/
 PREFIX_BIN=$(PREFIX)bin/
 PREFIX_LIB=$(PREFIX)lib/eliot/
 
