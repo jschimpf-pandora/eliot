@@ -103,8 +103,8 @@ CPPFLAGS+=	-DELIOT_BIN='"'$(PREFIX_BIN)'"'	\
 		-DELIOT_LIB='"'$(PREFIX_LIB)'"'
 
 install: all
-	install -m 0755 -p $(PRODUCT) $(PREFIX_BIN)
-	install -m 0755 -p $(PREFIX_LIB)
+	cp $(PRODUCT) $(PREFIX_BIN)
+	mkdir -p $(PREFIX_LIB)
 	cp builtins.eliot eliot.syntax C.syntax *.stylesheet $(PREFIX_LIB)
 
 test:
